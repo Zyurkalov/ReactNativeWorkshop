@@ -1,13 +1,7 @@
-import {
-    Image,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
-} from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { Colors, Fonts, Gaps, Padding, Radius } from "../../shared/tokens";
 import { Input } from "../../shared/UI-kit/Input";
+import { useEffect } from "react";
 
 export default function Welcome() {
     return (

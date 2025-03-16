@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, StatusBar } from "react-native";
 import Welcome from "./widget/welcome/welcomePage";
 import { Colors } from "./shared/tokens";
 
@@ -7,7 +6,10 @@ export default function App() {
     return (
         <View style={styles.container}>
             <Welcome></Welcome>
-            <StatusBar style="auto" />
+            <StatusBar
+                backgroundColor={Colors.black}
+                barStyle="light-content"
+            />
         </View>
     );
 }
